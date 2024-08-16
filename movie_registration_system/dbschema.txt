@@ -1,0 +1,30 @@
+Movies - stores info about each movie
+  title
+  genre
+  description
+  duration
+  has many showtimes
+  has many reservations
+
+Theaters - contains info about each theater
+  name
+  location
+  capacity
+  has many movies
+
+Schedules - Manages showtimes for each movie
+  showtimes for each movie
+  date
+  time
+  theater
+
+Reservations - tracks user reservations
+  one user
+  one selected movie
+  one theater
+  one scheduled showtime
+  has many seats
+
+Users - handles user info
+  username
+  password
