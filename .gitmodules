@@ -1,0 +1,3 @@
+[submodule "movie_registration_system"]
+  path = movie_registration_system
+  url = <SUBMODULE_REPOSITORY_URL>
