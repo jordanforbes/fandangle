@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Header from "./Components/Header/Header";
+import MovieCard from "./Components/Movies/MovieCard";
+import TheaterCard from "./Components/Theaters/TheaterCard";
 
 function App() {
   const [data, setData] = useState({});
@@ -22,6 +22,11 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <p>Movies</p>
+      <MovieCard />
+      <br />
+      <p>Theaters</p>
+      <TheaterCard />
     </div>
   );
 }

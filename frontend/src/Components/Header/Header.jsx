@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 const Header = (props) => {
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    setUser("Test User");
+  }, [user]);
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -23,6 +29,11 @@ const Header = (props) => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+        </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as: <a href="#login">{user}</a>
+          </Navbar.Text>
         </Navbar.Collapse>
       </Container>
     </Navbar>
