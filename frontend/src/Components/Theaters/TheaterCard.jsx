@@ -8,8 +8,8 @@ const TheaterCard = (props) => {
   const [location, setLocation] = useState("");
 
   useEffect(() => {
-    setTitle("Regal Cinema");
-    setLocation("123 Main St, Anytown");
+    setTitle(props.title);
+    setLocation(props.location);
   }, [title]);
 
   return (

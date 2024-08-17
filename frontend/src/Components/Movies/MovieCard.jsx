@@ -8,11 +8,10 @@ const MovieCard = (props) => {
   const [description, setDescription] = useState("");
 
   useEffect(() => {
-    setTitle("Evil Dead");
-    setDescription(
-      "Some quick example text to build on the card title and make up the bulk of the card's content."
-    );
-  }, [title, description]);
+    setTitle(props.title);
+    setDescription(props.description);
+    console.log(description);
+  }, [props]);
 
   return (
     <Card bg={"secondary"} text={"white"} style={{ width: "18rem" }}>

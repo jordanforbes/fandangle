@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Components/Header/Header";
 import MovieCard from "./Components/Movies/MovieCard";
-import TheaterCard from "./Components/Theaters/TheaterCard";
+import TheaterList from "./Components/Theaters/TheaterList";
+import MovieList from "./Components/Movies/MovieList";
 
 function App() {
   const [data, setData] = useState({});
@@ -23,10 +24,10 @@ function App() {
     <div className="App">
       <Header />
       <p>Movies</p>
-      <MovieCard />
+      <MovieList />
       <br />
       <p>Theaters</p>
-      <TheaterCard />
+      <TheaterList />
     </div>
   );
 }
