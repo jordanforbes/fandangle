@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "title": "Evil Dead 2",
+    "genre": "horror/comedy",
+    "duration": 90,
+    "description": "a horror movie but the main character is competent"
+  },
+  {
+    "id": 1,
+    "title": "The Big Lebowski",
+    "genre": "comedy",
+    "duration": 180,
+    "description": "a stoner gets mistaken for a rich man with the same name"
+  }
+]

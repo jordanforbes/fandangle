@@ -1,0 +1,159 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Silent Hills",
+      "genre": "Horror",
+      "duration": 120,
+      "description": "A group of friends find themselves in a town where time has stood still, and they must uncover its dark secrets to escape.",
+      "created_at": "2024-08-16T12:00:00Z",
+      "updated_at": "2024-08-16T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Space Odyssey",
+      "genre": "Sci-Fi",
+      "duration": 145,
+      "description": "A journey through space and time to discover the origins of mankind.",
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Romantic Getaway",
+      "genre": "Romance",
+      "duration": 110,
+      "description": "Two strangers meet on a tropical island and discover a love that changes their lives forever.",
+      "created_at": "2024-08-18T12:00:00Z",
+      "updated_at": "2024-08-18T12:00:00Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "schedule_id": 1,
+      "seat_number": 23,
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z",
+      "movie_id": 1,
+      "total_price_cents": 1500,
+      "status": "confirmed"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "schedule_id": 2,
+      "seat_number": 45,
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z",
+      "movie_id": 2,
+      "total_price_cents": 2000,
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "schedule_id": 3,
+      "seat_number": 12,
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z",
+      "movie_id": 3,
+      "total_price_cents": 1800,
+      "status": "canceled"
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "movie_id": 1,
+      "theater_id": 1,
+      "date": "2024-08-18",
+      "time": "18:30:00",
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "movie_id": 2,
+      "theater_id": 2,
+      "date": "2024-08-19",
+      "time": "20:00:00",
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "movie_id": 3,
+      "theater_id": 3,
+      "date": "2024-08-20",
+      "time": "17:00:00",
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z"
+    }
+  ],
+  "theaters": [
+    {
+      "id": 1,
+      "name": "Grand Cinema",
+      "location": "123 Main St, Anytown",
+      "capacity": 200,
+      "created_at": "2024-08-16T12:00:00Z",
+      "updated_at": "2024-08-16T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Star Theater",
+      "location": "456 Broadway, Bigcity",
+      "capacity": 150,
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Regal Cinema",
+      "location": "789 Center Rd, Metropolis",
+      "capacity": 250,
+      "created_at": "2024-08-18T12:00:00Z",
+      "updated_at": "2024-08-18T12:00:00Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "created_at": "2024-08-16T12:00:00Z",
+      "updated_at": "2024-08-16T12:00:00Z",
+      "encrypted_password": "encrypted_password_1",
+      "reset_password_token": null,
+      "reset_password_sent_at": null,
+      "remember_created_at": null,
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "created_at": "2024-08-17T12:00:00Z",
+      "updated_at": "2024-08-17T12:00:00Z",
+      "encrypted_password": "encrypted_password_2",
+      "reset_password_token": null,
+      "reset_password_sent_at": null,
+      "remember_created_at": null,
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "created_at": "2024-08-18T12:00:00Z",
+      "updated_at": "2024-08-18T12:00:00Z",
+      "encrypted_password": "encrypted_password_3",
+      "reset_password_token": null,
+      "reset_password_sent_at": null,
+      "remember_created_at": null,
+      "role": "user"
+    }
+  ]
+}
