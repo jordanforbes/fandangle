@@ -18,6 +18,15 @@ gem "stripe"
 # handles user authentication
 gem "devise"
 
+# generates web tokens
+gem "jwt"
+
+gem "warden"
+
+gem "pry"
+
+gem "byebug"
+
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"

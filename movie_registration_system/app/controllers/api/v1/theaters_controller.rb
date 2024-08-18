@@ -1,10 +1,6 @@
-module Api
-  module V1
-    class TheatersController < ApplicationController
-      def index
-        theaters = Theater.all
-        render json: theaters
-      end
-    end
+class Api::V1::TheatersController < ApplicationController
+  def index
+    theaters = Theater.all
+    render json: theaters
   end
 end

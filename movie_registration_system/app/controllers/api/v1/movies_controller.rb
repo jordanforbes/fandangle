@@ -1,10 +1,7 @@
-module Api
-  module V1
-    class MoviesController < ApplicationController
-      def index
-        movies = Movie.all
-        render json: movies
-      end
-    end
+
+class Api::V1::MoviesController < ApplicationController
+  def index
+    movies = Movie.all
+    render json: movies
   end
 end
