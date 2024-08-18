@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Card, Button } from "react-bootstrap";
 import "./Movies.css";
+import { Link } from "react-router-dom";
 
 const MovieCard = (props) => {
   const [title, setTitle] = useState("");
@@ -10,7 +11,7 @@ const MovieCard = (props) => {
   useEffect(() => {
     setTitle(props.title);
     setDescription(props.description);
-    console.log(description);
+    // console.log(description);
   }, [props]);
 
   return (
@@ -19,7 +20,9 @@ const MovieCard = (props) => {
       <Card.Body>
         <Card.Text>{description}</Card.Text>
         <br />
-        <Button variant="outline-light">Details</Button>
+        <Link to={`movie/${props.id}`}>
+          <Button variant="outline-light">Details</Button>
+        </Link>
       </Card.Body>
     </Card>
   );

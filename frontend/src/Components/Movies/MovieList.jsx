@@ -38,14 +38,18 @@ const MovieList = (props) => {
         updated_at: "2024-08-18T12:00:00Z",
       },
     ]);
-    console.log(movieList[0].description);
+    // console.log(movieList[0].description);
   }, []);
 
   return (
     <Container>
       <Stack direction="horizontal" gap={3}>
         {movieList.map((movie) => (
-          <MovieCard title={movie.title} description={movie.description} />
+          <MovieCard
+            title={movie.title}
+            description={movie.description}
+            id={movie.id}
+          />
         ))}
       </Stack>
     </Container>

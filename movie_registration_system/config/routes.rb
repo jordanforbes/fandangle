@@ -9,6 +9,9 @@ Rails.application.routes.draw do
       resources :reservations do
         post 'pay', to: 'payments#create'
       end
+      devise_for :users, controllers: {
+        sessions: 'api/v1/users/sessions'
+      }
     end
   end
 end
